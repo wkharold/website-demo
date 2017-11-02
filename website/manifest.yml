@@ -1,0 +1,4 @@
+applications:
+- name: website-demo
+  instances: 1
+  random-route: true
