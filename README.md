@@ -2,14 +2,14 @@
 
 This is an example of a simple website that you can host on your cloud foundry environment, using Concourse for automated deployments.  Just check in your code and let Concourse take care of the rest.
 
-Prerequisites:
+## Prerequisites:
 1. A Cloud Foundry environment you can use
 2. A Concourse environment you can use
 3. The Concourse Fly CLI installed.  You can install from your concourse home page, see the icons in the lower right corner.
 
 ![](images/fly-cli.png)
 
-Try it!
+## Try it!
 
 1. Fork the repo to your own github account
 
@@ -75,7 +75,7 @@ fly set-pipeline --target YOUR-CONCOURSE-TARGET --config pipeline.yml --pipeline
 fly unpause-pipeline --target YOUR-CONCOURSE-TARGET --pipeline deploy-website-demo
 ```
 
-7. To see your pipeline in concourse, copy URL from the output of the command above to your browser.  Login using same userid/password you did for the fly CLI.
+7. To see your pipeline in concourse, copy the URL from the output of the command above to your browser.  Login using same userid/password you did for the fly CLI.
 
 8. Click on the job `job-deploy-app`, then kick off a manual build by clicking on the plus sign at the upper right corner of the page.  The build should start after a few seconds.  Look at the build output to see your website pushed to cloud foundry.
 
