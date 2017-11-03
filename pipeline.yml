@@ -22,5 +22,5 @@ jobs:
   - {get: resource-web-app, trigger: true}
   - put: resource-deploy-web-app
     params:
-      manifest: website/manifest.yml
-      path: website
+      manifest: resource-web-app/website/manifest.yml
+      path: resource-web-app/website
