@@ -81,7 +81,7 @@ fly unpause-pipeline --target YOUR-CONCOURSE-TARGET --pipeline deploy-website-de
 
 ![](images/green-build.png)
 
-9. Now you're ready to start automating.  Edit the `index.html` file to change the text or color, then commit and sync your changes.  Within a minute or so, you should see a new build kick off.  Get the URL for your app from the output of the build, and bring it up in a browser.  The website should have the changes you just made.
+9. Now you're ready to start automating.  Edit the `index.html` file to change the text or color, then commit and sync your changes.  Refresh your Concourse page and within a minute or so you should see a new build kick off.  Get the URL for your app from the output of the build, and bring it up in a browser.  The website should have the changes you just made.
 
 10. Now you just need to check in your code, and Concourse will handle your deployment to Cloud Foundry.
 
