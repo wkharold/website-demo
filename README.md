@@ -52,7 +52,7 @@ jobs:
       path: resource-web-app/website
 ```
 
-4. Create a credentials.yml file with the following contents in the `website-demo` directory.  Replace the placeholders with your cloud foundry environment information.  **Be sure to include credentials.yml in your .gitignore file in the website-demo directory so you don't upload it when you commit your changes.**
+4. Create a credentials.yml file with the following contents in the `website-demo` directory.  Replace the placeholders with your cloud foundry environment information (run `cf target`).  **Be sure to include credentials.yml in your .gitignore file in the website-demo directory so you don't upload it when you commit your changes.**
 
 ```
 cf-api: https://YOUR-CF-API-ENDPOINT
@@ -62,10 +62,10 @@ cf-organization: YOUR-CF-ORG
 cf-space: YOUR-CF-SPACE
 ```
 
-5. Login to concourse using the Fly CLI.  You'll be prompted for your concourse userid and password.  For this lab, use your assigned number to specify the team, userid, and password - teamX, userX, pwX.  
+5. Login to concourse using the Fly CLI.  You'll be prompted for your concourse userid and password.  If you have been assigned to a team, include `-n TEAM_NAME` when you login.  You can use any value for YOUR_CONCOURSE-TARGET, such as `demo` or `lab`, you'll just need to include the same value in subsequent `fly` commands.
 
 ```
-fly -t YOUR-CONCOURSE-TARGET login -c http://concourse.lab1.gcp.cf-run.com -n teamX
+fly -t YOUR-CONCOURSE-TARGET login -c CONCOURSE_URL -n TEAM_NAME
 ```
 
 6. Create the pipeline
