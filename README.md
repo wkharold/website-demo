@@ -62,10 +62,10 @@ cf-organization: YOUR-CF-ORG
 cf-space: YOUR-CF-SPACE
 ```
 
-5. Login to concourse using the Fly CLI.  You'll be prompted for your concourse userid and password.  If you are logging in to a specific team, add ` -n YOUR-CONCOURSE-TEAM-NAME ` at the end.
+5. Login to concourse using the Fly CLI.  You'll be prompted for your concourse userid and password.  For this lab, use your assigned number to specify the team, userid, and password - teamX, userX, pwX.  
 
 ```
-fly -t YOUR-CONCOURSE-TARGET login -c http://YOUR-CONCOURSE-ENDPOINT
+fly -t YOUR-CONCOURSE-TARGET login -c http://concourse.lab1.gcp.cf-run.com -n teamX
 ```
 
 6. Create the pipeline
