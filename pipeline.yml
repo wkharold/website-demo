@@ -3,7 +3,7 @@ resources:
 - name: resource-web-app
   type: git
   source:
-    uri: https://github.com/mjeffries-pivotal/website-demo.git
+    uri: https://github.com/wkharold/website-demo.git
 
 - name: resource-deploy-web-app
   type: cf
